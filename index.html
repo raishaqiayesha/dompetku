@@ -942,9 +942,16 @@ auth.onAuthStateChanged(user=>{
 });
 
 function signInGoogle(){
-  const provider=new firebase.auth.GoogleAuthProvider();
-  auth.signInWithPopup(provider).catch(e=>alert('Login gagal: '+e.message));
+  const provider = new firebase.auth.GoogleAuthProvider();
+  
+  // Tambahkan baris ini agar browser selalu menanyakan pilihan akun:
+  provider.setCustomParameters({
+    prompt: 'select_account'
+  });
+
+  auth.signInWithPopup(provider).catch(e => alert('Login gagal: ' + e.message));
 }
+  
 function signOut(){
   if(dbRef)dbRef.off(); // stop listener
   auth.signOut();
