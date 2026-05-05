@@ -444,11 +444,12 @@ td.note-td{position:relative;}
       <div class="sinput-row cols3">
         <div class="ig"><label class="ilbl">Akun / Dompet</label>
           <select class="inp" id="sa-acc">
-            <option>BRI Ayah</option><option>Mandiri Ayah</option><option>Mandiri Kaka</option>
-            <option>BNI Kaka</option><option>Jenius Kaka</option><option>E-money Ayah</option>
-            <option>E-money Kaka</option><option>E-money Inpex</option><option>Gopay Kaka</option>
-            <option>Gopay Bunda</option><option>Gopay Ayah</option><option>Tunai Ayah</option>
-            <option>Tunai Bunda</option><option>Tunai Kakak</option><option>Lain-lain</option>
+<option>BRI Ayah</option><option>BCA Ayah</option><option>BNI Bunda</option>
+            <option>BNI Kaka</option><option>Mandiri Ayah</option><option>Mandiri Kaka</option>
+            <option>Tunai Ayah</option><option>Tunai Bunda</option><option>Tunai Kaka</option>
+            <option>Emoney Ayah</option><option>Emoney Inpex</option><option>Emoney Kaka</option>
+            <option>Tunai Amplop</option><option>Gopay Ayah</option><option>Gopay Bunda</option>
+            <option>Gopay Kaka</option>
           </select>
         </div>
         <div class="ig"><label class="ilbl">Nominal</label><div class="aw"><span class="rpfx">Rp</span><input type="text" class="inp inp-rp" id="sa-amt" placeholder="0" oninput="fmtInp(this)" onkeydown="if(event.key==='Enter')setSaldo('awal')"></div></div>
@@ -465,11 +466,12 @@ td.note-td{position:relative;}
       <div class="sinput-row cols3">
         <div class="ig"><label class="ilbl">Akun / Dompet</label>
           <select class="inp" id="sb-acc">
-            <option>BRI Ayah</option><option>Mandiri Ayah</option><option>Mandiri Kaka</option>
-            <option>BNI Kaka</option><option>Jenius Kaka</option><option>E-money Ayah</option>
-            <option>E-money Kaka</option><option>E-money Inpex</option><option>Gopay Kaka</option>
-            <option>Gopay Bunda</option><option>Gopay Ayah</option><option>Tunai Ayah</option>
-            <option>Tunai Bunda</option><option>Tunai Kakak</option><option>Lain-lain</option>
+<option>BRI Ayah</option><option>BCA Ayah</option><option>BNI Bunda</option>
+            <option>BNI Kaka</option><option>Mandiri Ayah</option><option>Mandiri Kaka</option>
+            <option>Tunai Ayah</option><option>Tunai Bunda</option><option>Tunai Kaka</option>
+            <option>Emoney Ayah</option><option>Emoney Inpex</option><option>Emoney Kaka</option>
+            <option>Tunai Amplop</option><option>Gopay Ayah</option><option>Gopay Bunda</option>
+            <option>Gopay Kaka</option>
           </select>
         </div>
         <div class="ig"><label class="ilbl">Nominal</label><div class="aw"><span class="rpfx">Rp</span><input type="text" class="inp inp-rp" id="sb-amt" placeholder="0" oninput="fmtInp(this)" onkeydown="if(event.key==='Enter')setSaldo('bulanan')"></div></div>
@@ -508,14 +510,18 @@ td.note-td{position:relative;}
           <optgroup label="Pemasukan">
             <option>Gaji Ayah</option><option>Gaji Kaka</option><option>Hadiah</option><option>Bisnis</option>
           </optgroup>
-          <optgroup label="Pengeluaran Rumah">
-            <option>Cemilan</option><option>Bensin</option><option>Parkir + Emoney</option>
-            <option>Masak</option><option>Oprs + PDAM Kuningan</option><option>Vit Ber3</option>
-            <option>Kuota Ber3</option><option>Zis</option><option>Shopping</option>
-            <option>Kwitansi Puri dan Galon</option><option>Kuliner Weekend</option>
-            <option>Skincare</option><option>Belanja Bulanan</option>
-            <option>Tlp + Listrik Bandung</option><option>Gocar Gojek</option>
-            <option>Vit Nene + Ongkir</option>
+          <optgroup label="Pengeluaran">
+            <option>Tiket Ayah</option><option>Kos Ayah</option><option>Makan Ayah</option>
+            <option>Cemilan Ayah</option><option>Gojek Gocar KRL Ayah</option><option>Laundry Ayah</option>
+            <option>Token Ayah</option><option>Cemilan</option><option>Bensin Motor</option>
+            <option>Bensin Mobil</option><option>Parkir + Emoney</option><option>Masak</option>
+            <option>Oprs + PDAM Kng</option><option>Vit Ber 3</option><option>Kuota Ayah</option>
+            <option>Kuota Bunda</option><option>Kuota Kaka</option><option>Zis</option>
+            <option>Shopping</option><option>Kwitansi Puri</option><option>Galon</option>
+            <option>Kuliner Weekend</option><option>Skincare</option><option>Belanja Bulanan</option>
+            <option>Tlp + Listrik Bdg</option><option>Gocar Gojek</option><option>Vit Nene + Ongkir</option>
+            <option>Entertain Ayah</option><option>Entertain Bunda</option><option>Entertain Kaka</option>
+            <option>Silahturahmi Kelbes Ayah</option><option>Silahturahmi Kelbes Bunda</option>
           </optgroup>
           <optgroup label="Tabungan & Investasi">
             <option>Tabungan Dingin</option><option>Tabungan Bergerak</option>
@@ -598,9 +604,18 @@ td.note-td{position:relative;}
           <optgroup label="Pemasukan">
             <option>Gaji Ayah</option><option>Gaji Kaka</option><option>Hadiah</option><option>Bisnis</option>
           </optgroup>
-          <optgroup label="Pengeluaran Kost">
-            <option>Kereta/Travel</option><option>Makan</option><option>Cemilan</option>
-            <option>Gojek Gocar</option><option>Token</option><option>Kost</option><option>Laundry</option>
+          <optgroup label="Pengeluaran">
+            <option>Tiket Ayah</option><option>Kos Ayah</option><option>Makan Ayah</option>
+            <option>Cemilan Ayah</option><option>Gojek Gocar KRL Ayah</option><option>Laundry Ayah</option>
+            <option>Token Ayah</option><option>Cemilan</option><option>Bensin Motor</option>
+            <option>Bensin Mobil</option><option>Parkir + Emoney</option><option>Masak</option>
+            <option>Oprs + PDAM Kng</option><option>Vit Ber 3</option><option>Kuota Ayah</option>
+            <option>Kuota Bunda</option><option>Kuota Kaka</option><option>Zis</option>
+            <option>Shopping</option><option>Kwitansi Puri</option><option>Galon</option>
+            <option>Kuliner Weekend</option><option>Skincare</option><option>Belanja Bulanan</option>
+            <option>Tlp + Listrik Bdg</option><option>Gocar Gojek</option><option>Vit Nene + Ongkir</option>
+            <option>Entertain Ayah</option><option>Entertain Bunda</option><option>Entertain Kaka</option>
+            <option>Silahturahmi Kelbes Ayah</option><option>Silahturahmi Kelbes Bunda</option>
           </optgroup>
           <optgroup label="Tabungan & Investasi">
             <option>Tabungan Dingin</option><option>Tabungan Bergerak</option>
@@ -737,18 +752,17 @@ td.note-td{position:relative;}
       </div>
       <div class="ig"><label class="ilbl">Kategori</label>
         <select class="inp" id="bgt-cat" style="width:210px;">
-          <!-- Rumah pengeluaran -->
-          <option>Cemilan</option><option>Bensin</option><option>Parkir + Emoney</option>
-          <option>Masak</option><option>Oprs + PDAM Kuningan</option><option>Vit Ber3</option>
-          <option>Kuota Ber3</option><option>Zis</option><option>Shopping</option>
-          <option>Kwitansi Puri dan Galon</option><option>Kuliner Weekend</option>
-          <option>Skincare</option><option>Belanja Bulanan</option>
-          <option>Tlp + Listrik Bandung</option><option>Gocar Gojek</option>
-          <option>Vit Nene + Ongkir</option>
-          <!-- Kost pengeluaran -->
-          <option>Kereta/Travel</option><option>Makan</option>
-          <option>Gojek Gocar</option><option>Token</option><option>Kost</option><option>Laundry</option>
-          <!-- Tabungan -->
+          <option>Tiket Ayah</option><option>Kos Ayah</option><option>Makan Ayah</option>
+          <option>Cemilan Ayah</option><option>Gojek Gocar KRL Ayah</option><option>Laundry Ayah</option>
+          <option>Token Ayah</option><option>Cemilan</option><option>Bensin Motor</option>
+          <option>Bensin Mobil</option><option>Parkir + Emoney</option><option>Masak</option>
+          <option>Oprs + PDAM Kng</option><option>Vit Ber 3</option><option>Kuota Ayah</option>
+          <option>Kuota Bunda</option><option>Kuota Kaka</option><option>Zis</option>
+          <option>Shopping</option><option>Kwitansi Puri</option><option>Galon</option>
+          <option>Kuliner Weekend</option><option>Skincare</option><option>Belanja Bulanan</option>
+          <option>Tlp + Listrik Bdg</option><option>Gocar Gojek</option><option>Vit Nene + Ongkir</option>
+          <option>Entertain Ayah</option><option>Entertain Bunda</option><option>Entertain Kaka</option>
+          <option>Silahturahmi Kelbes Ayah</option><option>Silahturahmi Kelbes Bunda</option>
           <option>Tabungan Dingin</option><option>Tabungan Bergerak</option>
           <option>Tabungan Emas</option><option>Dana Darurat</option><option>Dana Pensiun</option>
         </select>
@@ -898,10 +912,11 @@ const CC={
   'Tabungan Emas':'#f8e8a0','Dana Darurat':'#c8f0e0','Dana Pensiun':'#e0c8f8',
 };
 const SAC={
-  'BRI Ayah':'#e07878','Mandiri Ayah':'#c8a838','Mandiri Kaka':'#38a870','BNI Kaka':'#3878c8',
-  'Jenius Kaka':'#7838c8','E-money Ayah':'#c83838','E-money Kaka':'#a85820','E-money Inpex':'#4898c8',
-  'Gopay Kaka':'#38a8d8','Gopay Bunda':'#c858a8','Gopay Ayah':'#a0c840','Tunai Ayah':'#c8b038',
-  'Tunai Bunda':'#d080c0','Tunai Kakak':'#d0a050',
+  'BRI Ayah':'#e07878','BCA Ayah':'#2060c8','BNI Bunda':'#c858a8','BNI Kaka':'#3878c8',
+  'Mandiri Ayah':'#c8a838','Mandiri Kaka':'#38a870',
+  'Tunai Ayah':'#c8b038','Tunai Bunda':'#d080c0','Tunai Kaka':'#d0a050','Tunai Amplop':'#a8c070',
+  'Emoney Ayah':'#c83838','Emoney Inpex':'#4898c8','Emoney Kaka':'#a85820',
+  'Gopay Ayah':'#a0c840','Gopay Bunda':'#c878d8','Gopay Kaka':'#38a8d8',
 };
 const SEC_ICONS={'Tabungan Dingin':'❄️','Tabungan Bergerak':'🔄','Tabungan Emas':'✨','Dana Darurat':'🛡️','Dana Pensiun':'🌅'};
 const SEC_COLS={'Tabungan Dingin':'#b8e8f8','Tabungan Bergerak':'#b8f0d8','Tabungan Emas':'#f8e8a0','Dana Darurat':'#c8f0e0','Dana Pensiun':'#e0c8f8'};
@@ -1065,11 +1080,11 @@ function editTxRow(id,p){
   const tr=document.getElementById(`tx-row-${id}`);
   const catOpts = p==='r' ? [
     ['Pemasukan','Gaji Ayah','Gaji Kaka','Hadiah','Bisnis'],
-    ['Pengeluaran Rumah','Cemilan','Bensin','Parkir + Emoney','Masak','Oprs + PDAM Kuningan','Vit Ber3','Kuota Ber3','Zis','Shopping','Kwitansi Puri dan Galon','Kuliner Weekend','Skincare','Belanja Bulanan','Tlp + Listrik Bandung','Gocar Gojek','Vit Nene + Ongkir'],
+    ['Pengeluaran','Tiket Ayah','Kos Ayah','Makan Ayah','Cemilan Ayah','Gojek Gocar KRL Ayah','Laundry Ayah','Token Ayah','Cemilan','Bensin Motor','Bensin Mobil','Parkir + Emoney','Masak','Oprs + PDAM Kng','Vit Ber 3','Kuota Ayah','Kuota Bunda','Kuota Kaka','Zis','Shopping','Kwitansi Puri','Galon','Kuliner Weekend','Skincare','Belanja Bulanan','Tlp + Listrik Bdg','Gocar Gojek','Vit Nene + Ongkir','Entertain Ayah','Entertain Bunda','Entertain Kaka','Silahturahmi Kelbes Ayah','Silahturahmi Kelbes Bunda'],
     ['Tabungan & Investasi','Tabungan Dingin','Tabungan Bergerak','Tabungan Emas','Dana Darurat','Dana Pensiun'],
   ] : [
     ['Pemasukan','Gaji Ayah','Gaji Kaka','Hadiah','Bisnis'],
-    ['Pengeluaran Kost','Kereta/Travel','Makan','Cemilan','Gojek Gocar','Token','Kost','Laundry'],
+    ['Pengeluaran','Tiket Ayah','Kos Ayah','Makan Ayah','Cemilan Ayah','Gojek Gocar KRL Ayah','Laundry Ayah','Token Ayah','Cemilan','Bensin Motor','Bensin Mobil','Parkir + Emoney','Masak','Oprs + PDAM Kng','Vit Ber 3','Kuota Ayah','Kuota Bunda','Kuota Kaka','Zis','Shopping','Kwitansi Puri','Galon','Kuliner Weekend','Skincare','Belanja Bulanan','Tlp + Listrik Bdg','Gocar Gojek','Vit Nene + Ongkir','Entertain Ayah','Entertain Bunda','Entertain Kaka','Silahturahmi Kelbes Ayah','Silahturahmi Kelbes Bunda'],
     ['Tabungan & Investasi','Tabungan Dingin','Tabungan Bergerak','Tabungan Emas','Dana Darurat','Dana Pensiun'],
   ];
   let catOptsHtml=catOpts.map(g=>`<optgroup label="${g[0]}">${g.slice(1).map(o=>`<option${o===tx.category?' selected':''}>${o}</option>`).join('')}</optgroup>`).join('');
