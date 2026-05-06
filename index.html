@@ -509,6 +509,7 @@ td.note-td{position:relative;}
           <option value="">— Pilih —</option>
           <optgroup label="Pemasukan">
             <option>Gaji Ayah</option><option>Gaji Kaka</option><option>Hadiah</option><option>Bisnis</option>
+            <option>Bunga Deposito</option><option>Trf dari Bank Ber3</option>
           </optgroup>
           <optgroup label="Pengeluaran">
             <option>Tiket Ayah</option><option>Kos Ayah</option><option>Makan Ayah</option>
@@ -522,6 +523,7 @@ td.note-td{position:relative;}
             <option>Tlp + Listrik Bdg</option><option>Gocar Gojek</option><option>Vit Nene + Ongkir</option>
             <option>Entertain Ayah</option><option>Entertain Bunda</option><option>Entertain Kaka</option>
             <option>Silahturahmi Kelbes Ayah</option><option>Silahturahmi Kelbes Bunda</option>
+            <option>Admin Bank</option><option>Treatment Ber3</option>
           </optgroup>
           <optgroup label="Tabungan & Investasi">
             <option>Tabungan Dingin</option><option>Tabungan Bergerak</option>
@@ -603,6 +605,7 @@ td.note-td{position:relative;}
           <option value="">— Pilih —</option>
           <optgroup label="Pemasukan">
             <option>Gaji Ayah</option><option>Gaji Kaka</option><option>Hadiah</option><option>Bisnis</option>
+            <option>Bunga Deposito</option><option>Trf dari Bank Ber3</option>
           </optgroup>
           <optgroup label="Pengeluaran">
             <option>Tiket Ayah</option><option>Kos Ayah</option><option>Makan Ayah</option>
@@ -616,6 +619,7 @@ td.note-td{position:relative;}
             <option>Tlp + Listrik Bdg</option><option>Gocar Gojek</option><option>Vit Nene + Ongkir</option>
             <option>Entertain Ayah</option><option>Entertain Bunda</option><option>Entertain Kaka</option>
             <option>Silahturahmi Kelbes Ayah</option><option>Silahturahmi Kelbes Bunda</option>
+            <option>Admin Bank</option><option>Treatment Ber3</option>
           </optgroup>
           <optgroup label="Tabungan & Investasi">
             <option>Tabungan Dingin</option><option>Tabungan Bergerak</option>
@@ -763,6 +767,7 @@ td.note-td{position:relative;}
           <option>Tlp + Listrik Bdg</option><option>Gocar Gojek</option><option>Vit Nene + Ongkir</option>
           <option>Entertain Ayah</option><option>Entertain Bunda</option><option>Entertain Kaka</option>
           <option>Silahturahmi Kelbes Ayah</option><option>Silahturahmi Kelbes Bunda</option>
+          <option>Admin Bank</option><option>Treatment Ber3</option>
           <option>Tabungan Dingin</option><option>Tabungan Bergerak</option>
           <option>Tabungan Emas</option><option>Dana Darurat</option><option>Dana Pensiun</option>
         </select>
@@ -1079,12 +1084,12 @@ function editTxRow(id,p){
   if(!tx)return;
   const tr=document.getElementById(`tx-row-${id}`);
   const catOpts = p==='r' ? [
-    ['Pemasukan','Gaji Ayah','Gaji Kaka','Hadiah','Bisnis'],
-    ['Pengeluaran','Tiket Ayah','Kos Ayah','Makan Ayah','Cemilan Ayah','Gojek Gocar KRL Ayah','Laundry Ayah','Token Ayah','Cemilan','Bensin Motor','Bensin Mobil','Parkir + Emoney','Masak','Oprs + PDAM Kng','Vit Ber 3','Kuota Ayah','Kuota Bunda','Kuota Kaka','Zis','Shopping','Kwitansi Puri','Galon','Kuliner Weekend','Skincare','Belanja Bulanan','Tlp + Listrik Bdg','Gocar Gojek','Vit Nene + Ongkir','Entertain Ayah','Entertain Bunda','Entertain Kaka','Silahturahmi Kelbes Ayah','Silahturahmi Kelbes Bunda'],
+    ['Pemasukan','Gaji Ayah','Gaji Kaka','Hadiah','Bisnis','Bunga Deposito','Trf dari Bank Ber3'],
+    ['Pengeluaran','Tiket Ayah','Kos Ayah','Makan Ayah','Cemilan Ayah','Gojek Gocar KRL Ayah','Laundry Ayah','Token Ayah','Cemilan','Bensin Motor','Bensin Mobil','Parkir + Emoney','Masak','Oprs + PDAM Kng','Vit Ber 3','Kuota Ayah','Kuota Bunda','Kuota Kaka','Zis','Shopping','Kwitansi Puri','Galon','Kuliner Weekend','Skincare','Belanja Bulanan','Tlp + Listrik Bdg','Gocar Gojek','Vit Nene + Ongkir','Entertain Ayah','Entertain Bunda','Entertain Kaka','Silahturahmi Kelbes Ayah','Silahturahmi Kelbes Bunda','Admin Bank','Treatment Ber3'],
     ['Tabungan & Investasi','Tabungan Dingin','Tabungan Bergerak','Tabungan Emas','Dana Darurat','Dana Pensiun'],
   ] : [
-    ['Pemasukan','Gaji Ayah','Gaji Kaka','Hadiah','Bisnis'],
-    ['Pengeluaran','Tiket Ayah','Kos Ayah','Makan Ayah','Cemilan Ayah','Gojek Gocar KRL Ayah','Laundry Ayah','Token Ayah','Cemilan','Bensin Motor','Bensin Mobil','Parkir + Emoney','Masak','Oprs + PDAM Kng','Vit Ber 3','Kuota Ayah','Kuota Bunda','Kuota Kaka','Zis','Shopping','Kwitansi Puri','Galon','Kuliner Weekend','Skincare','Belanja Bulanan','Tlp + Listrik Bdg','Gocar Gojek','Vit Nene + Ongkir','Entertain Ayah','Entertain Bunda','Entertain Kaka','Silahturahmi Kelbes Ayah','Silahturahmi Kelbes Bunda'],
+    ['Pemasukan','Gaji Ayah','Gaji Kaka','Hadiah','Bisnis','Bunga Deposito','Trf dari Bank Ber3'],
+    ['Pengeluaran','Tiket Ayah','Kos Ayah','Makan Ayah','Cemilan Ayah','Gojek Gocar KRL Ayah','Laundry Ayah','Token Ayah','Cemilan','Bensin Motor','Bensin Mobil','Parkir + Emoney','Masak','Oprs + PDAM Kng','Vit Ber 3','Kuota Ayah','Kuota Bunda','Kuota Kaka','Zis','Shopping','Kwitansi Puri','Galon','Kuliner Weekend','Skincare','Belanja Bulanan','Tlp + Listrik Bdg','Gocar Gojek','Vit Nene + Ongkir','Entertain Ayah','Entertain Bunda','Entertain Kaka','Silahturahmi Kelbes Ayah','Silahturahmi Kelbes Bunda','Admin Bank','Treatment Ber3'],
     ['Tabungan & Investasi','Tabungan Dingin','Tabungan Bergerak','Tabungan Emas','Dana Darurat','Dana Pensiun'],
   ];
   let catOptsHtml=catOpts.map(g=>`<optgroup label="${g[0]}">${g.slice(1).map(o=>`<option${o===tx.category?' selected':''}>${o}</option>`).join('')}</optgroup>`).join('');
