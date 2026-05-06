@@ -509,7 +509,7 @@ td.note-td{position:relative;}
           <option value="">— Pilih —</option>
           <optgroup label="Pemasukan">
             <option>Gaji Ayah</option><option>Gaji Kaka</option><option>Hadiah</option><option>Bisnis</option>
-            <option>Bunga Deposito</option><option>Trf dari Bank Ber3</option>
+            <option>Bunga Deposito</option><option>Trf dari Tabungan</option>
           </optgroup>
           <optgroup label="Pengeluaran">
             <option>Tiket Ayah</option><option>Kos Ayah</option><option>Makan Ayah</option>
@@ -605,7 +605,7 @@ td.note-td{position:relative;}
           <option value="">— Pilih —</option>
           <optgroup label="Pemasukan">
             <option>Gaji Ayah</option><option>Gaji Kaka</option><option>Hadiah</option><option>Bisnis</option>
-            <option>Bunga Deposito</option><option>Trf dari Bank Ber3</option>
+            <option>Bunga Deposito</option><option>Trf dari Tabungan</option>
           </optgroup>
           <optgroup label="Pengeluaran">
             <option>Tiket Ayah</option><option>Kos Ayah</option><option>Makan Ayah</option>
@@ -1084,11 +1084,11 @@ function editTxRow(id,p){
   if(!tx)return;
   const tr=document.getElementById(`tx-row-${id}`);
   const catOpts = p==='r' ? [
-    ['Pemasukan','Gaji Ayah','Gaji Kaka','Hadiah','Bisnis','Bunga Deposito','Trf dari Bank Ber3'],
+    ['Pemasukan','Gaji Ayah','Gaji Kaka','Hadiah','Bisnis','Bunga Deposito','Trf dari Tabungan'],
     ['Pengeluaran','Tiket Ayah','Kos Ayah','Makan Ayah','Cemilan Ayah','Gojek Gocar KRL Ayah','Laundry Ayah','Token Ayah','Cemilan','Bensin Motor','Bensin Mobil','Parkir + Emoney','Masak','Oprs + PDAM Kng','Vit Ber 3','Kuota Ayah','Kuota Bunda','Kuota Kaka','Zis','Shopping','Kwitansi Puri','Galon','Kuliner Weekend','Skincare','Belanja Bulanan','Tlp + Listrik Bdg','Gocar Gojek','Vit Nene + Ongkir','Entertain Ayah','Entertain Bunda','Entertain Kaka','Silahturahmi Kelbes Ayah','Silahturahmi Kelbes Bunda','Admin Bank','Treatment Ber3'],
     ['Tabungan & Investasi','Tabungan Dingin','Tabungan Bergerak','Tabungan Emas','Dana Darurat','Dana Pensiun'],
   ] : [
-    ['Pemasukan','Gaji Ayah','Gaji Kaka','Hadiah','Bisnis','Bunga Deposito','Trf dari Bank Ber3'],
+    ['Pemasukan','Gaji Ayah','Gaji Kaka','Hadiah','Bisnis','Bunga Deposito','Trf dari Tabungan'],
     ['Pengeluaran','Tiket Ayah','Kos Ayah','Makan Ayah','Cemilan Ayah','Gojek Gocar KRL Ayah','Laundry Ayah','Token Ayah','Cemilan','Bensin Motor','Bensin Mobil','Parkir + Emoney','Masak','Oprs + PDAM Kng','Vit Ber 3','Kuota Ayah','Kuota Bunda','Kuota Kaka','Zis','Shopping','Kwitansi Puri','Galon','Kuliner Weekend','Skincare','Belanja Bulanan','Tlp + Listrik Bdg','Gocar Gojek','Vit Nene + Ongkir','Entertain Ayah','Entertain Bunda','Entertain Kaka','Silahturahmi Kelbes Ayah','Silahturahmi Kelbes Bunda','Admin Bank','Treatment Ber3'],
     ['Tabungan & Investasi','Tabungan Dingin','Tabungan Bergerak','Tabungan Emas','Dana Darurat','Dana Pensiun'],
   ];
